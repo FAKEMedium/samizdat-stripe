@@ -1,4 +1,3 @@
--- 1 up
 -- Stripe Payment Integration Schema
 -- Embedded components with API key authentication
 -- Documentation: https://docs.stripe.com
@@ -129,6 +128,3 @@ COMMENT ON COLUMN stripe.payments.amount IS 'Amount in smallest currency unit (c
 COMMENT ON COLUMN stripe.payments.status IS 'Payment status: created, pending, succeeded, failed, canceled';
 COMMENT ON TABLE stripe.webhook_log IS 'Audit log of webhook events from Stripe';
 COMMENT ON TABLE stripe.refunds IS 'Refund operations for Stripe payments';
-
--- 1 down
-DROP SCHEMA IF EXISTS stripe CASCADE;

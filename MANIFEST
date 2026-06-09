@@ -16,6 +16,8 @@ lib/Samizdat/resources/locale/stripe/stripe.pot
 lib/Samizdat/resources/locale/stripe/sv/stripe.po
 lib/Samizdat/resources/locale/stripe/zh/stripe.po
 lib/Samizdat/resources/migrations/pg/40-stripe.sql
+lib/Samizdat/resources/migrations/pg/40-stripe/1/down.sql
+lib/Samizdat/resources/migrations/pg/40-stripe/1/up.sql
 lib/Samizdat/resources/settings/stripe/schema.yml
 lib/Samizdat/resources/templates/stripe/cancel/index.html.ep
 lib/Samizdat/resources/templates/stripe/cancel/index.js
