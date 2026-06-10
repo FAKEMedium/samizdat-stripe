@@ -12,5 +12,5 @@ my $schema = eval { LoadFile(File::Spec->catfile($d,'settings','stripe','schema.
 ok(ref $schema eq 'HASH', 'stripe settings schema loads')
   and is($schema->{'x-samizdat-audience'}, 'operator', 'audience is operator');
 ok(-d File::Spec->catdir($d,'templates','stripe'), 'stripe templates ship');
-ok(scalar(glob(File::Spec->catfile($d,'migrations','pg','*-stripe.sql'))), 'stripe pg migration ships');
+ok(scalar(glob(File::Spec->catfile($d,'migrations','pg','*-stripe','*','up.sql'))), 'stripe pg migration ships');
 done_testing;
